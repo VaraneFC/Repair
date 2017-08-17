@@ -1,0 +1,115 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+@using (Html.BeginForm(("SaveRecord" ), "HomeController" , FormMethod.Post))
+{
+<h2>Repair/Add Form</h2>
+<div class="container">
+    <div class="master">
+        <h2>Add Form</h2>
+        <table class="table table-responsive">
+            <tr>
+                <td><strong>S/No Ter</strong></td>
+                <td>
+                    <input type="text" id="Serial_No" class="form-control" />
+                </td>
+                <td><strong>Device Type</strong></td>
+                <td>
+                    <input type="text" id="DeviceType" class="form-control" />
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Faulty ID</strong></td>
+                <td>
+                    <input type="text" id="FaultyID" class="form-control">
+                </td>
+                <td>
+                    <strong>Faulty Category</strong>
+                </td>
+                <td>
+                    <input type="text" id="FaultyCategory" class="form-control" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Repair Description</strong>
+                </td>
+                <td>
+                    <input type="text" id="Repair_Description" class="form-control" />
+                </td>
+                <td><strong>Repair By</strong></td>
+                <td><input type="text" id="Repair_By" class="form-control" /></td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Repair Status</strong>
+                </td>
+                <td><input type="text" id="Repair_Status" class="form-control" /></td>
+                <td><strong>Tested By</strong></td>
+                <td><input type="text" id="TestedBy" class="form-control"></td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Status</strong>
+                </td>
+                <td>
+                    <input type="text" id="Status" class="form-control" />
+                </td>
+                <td>
+                    <strong>Faulty Type</strong>
+                </td>
+                <td>
+                    <input type="text" id="FaultyType" class="form-control" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>
+                        Bank
+                    </strong>
+                </td>
+                <td>
+                    <input type="text" id="Bank" class="form-control" />
+                </td>
+                <td>
+                    <strong>
+                        Repair Return Date
+                    </strong>
+                </td>
+                <td>
+                    <input type="text" id="RepairReturn_Date" class="form-control" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>RMA No</strong>
+                </td>
+                <td>
+                    <input type="text" id="RMA_No" class="form-control" />
+                </td>
+                <td>
+                    <strong>Owner</strong>
+                </td>
+                <td>
+                    <input type="text" id="Owner" class="form-control" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>By Date</strong>
+                </td>
+                <td>
+                    <input type="text" id="ByDate" class="form-control" />
+                </td>
+                <td>
+                    <strong>Remark</strong>
+                </td>
+                <td>
+                    <input type="text" id="Remark" class="form-control" />
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+}
